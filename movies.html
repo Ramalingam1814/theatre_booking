@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movies — CineBook</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="site-navbar"></div>
+
+<main class="container">
+  <div class="page-heading">
+    <h1>Now Showing</h1>
+    <p>Search and filter to find exactly what you want to watch.</p>
+  </div>
+
+  <section class="filter-bar">
+    <div class="filter-group" style="flex:2;min-width:220px;">
+      <label class="filter-label" for="search-input">Search</label>
+      <input type="text" id="search-input" placeholder="Search by movie title or genre">
+    </div>
+    <div class="filter-group">
+      <label class="filter-label" for="genre-filter">Genre</label>
+      <select id="genre-filter">
+        <option value="">All Genres</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label class="filter-label" for="language-filter">Language</label>
+      <select id="language-filter">
+        <option value="">All Languages</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label class="filter-label" for="sort-filter">Sort By</label>
+      <select id="sort-filter">
+        <option value="">Default</option>
+        <option value="rating">Rating (High to Low)</option>
+        <option value="title">Title (A–Z)</option>
+      </select>
+    </div>
+  </section>
+
+  <p id="results-count" style="color:#64748B;margin-top:-12px;margin-bottom:20px;"></p>
+
+  <section id="movie-results" class="grid" style="margin-bottom:50px;"></section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/movies.js"></script>
+</body>
+</html>

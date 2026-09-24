@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="440" viewBox="0 0 300 440">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1565C0"/><stop offset="100%" stop-color="#3B82F6"/>
+  </linearGradient></defs>
+  <rect width="300" height="440" fill="url(#g)"/>
+  <circle cx="150" cy="120" r="55" fill="#ffffff" opacity="0.12"/>
+  <polygon points="135,100 135,140 170,120" fill="#ffffff" opacity="0.85"/>
+  <text x="150" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">Zindagi Na</text><text x="150" y="238" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">Milegi</text>
+  <rect x="20" y="390" width="260" height="2" fill="#ffffff" opacity="0.4"/>
+  <text x="150" y="415" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#E3F2FD" text-anchor="middle" opacity="0.9">CINEBOOK THEATRE</text>
+</svg>

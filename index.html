@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CineBook — Theatre Ticket Booking System</title>
+<meta name="description" content="Book movie tickets online — browse movies, select seats and reserve your show in minutes.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="site-navbar"></div>
+
+<header class="hero">
+  <h1>Book Your Movie Tickets, Instantly</h1>
+  <p>Browse the latest movies, choose your favourite theatre and pick the perfect seat — all in one place.</p>
+  <form id="hero-search-form" class="search-bar" role="search">
+    <label for="hero-search-input" class="sr-only" style="position:absolute;left:-9999px;">Search movies</label>
+    <input type="text" id="hero-search-input" placeholder="Search for a movie, e.g. Interstellar">
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+</header>
+
+<main>
+  <section class="section container">
+    <h2 class="section-title">Featured Movies</h2>
+    <p class="section-subtitle">Hand-picked shows you shouldn't miss this week.</p>
+    <div id="featured-movies" class="grid"></div>
+  </section>
+
+  <section class="section container" style="padding-top:0;">
+    <h2 class="section-title">Popular Movies</h2>
+    <p class="section-subtitle">Top-rated movies loved by our audience.</p>
+    <div id="popular-movies" class="grid"></div>
+  </section>
+
+  <section class="section container" style="padding-top:0;">
+    <h2 class="section-title">Why Choose CineBook</h2>
+    <p class="section-subtitle">A simple, transparent way to book your show.</p>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🎬</div>
+        <h3>Wide Movie Selection</h3>
+        <p>Choose from a variety of genres and languages across multiple theatres.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💺</div>
+        <h3>Interactive Seat Selection</h3>
+        <p>Pick your exact seat with a real-time, visual seat map.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Instant Booking</h3>
+        <p>Get a confirmed booking ID in seconds, no waiting in line.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>Works Everywhere</h3>
+        <p>A fully responsive experience across desktop, tablet and mobile.</p>
+      </div>
+    </div>
+
+    <div class="cta-banner">
+      <h2>Ready for your next movie night?</h2>
+      <p>Explore now-showing movies and reserve your seats in under a minute.</p>
+      <a href="movies.html" class="btn btn-primary">Browse Movies</a>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

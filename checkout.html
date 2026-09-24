@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — CineBook</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="site-navbar"></div>
+
+<main class="container" style="padding-top:24px;">
+  <div class="page-heading" style="padding-top:0;">
+    <h1>Checkout</h1>
+    <p>This is a simulated payment flow for demonstration purposes — no real transaction is processed.</p>
+  </div>
+
+  <div id="checkout-content" class="two-col">
+    <form id="checkout-form">
+      <div class="card">
+        <h2>Customer Details</h2>
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" placeholder="Demo User" required>
+          <span class="error-text"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="demo@example.com" required>
+          <span class="error-text"></span>
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile Number</label>
+          <input type="tel" id="mobile" placeholder="9876543210" maxlength="10" required>
+          <span class="error-text"></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Payment Method</h2>
+        <div class="payment-options">
+          <div class="payment-option" data-method="UPI">📱 UPI</div>
+          <div class="payment-option" data-method="Card">💳 Card</div>
+          <div class="payment-option" data-method="Net Banking">🏦 Net Banking</div>
+          <div class="payment-option" data-method="Cash at Counter">💵 Cash at Counter</div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-success btn-block" style="padding:16px;font-size:1.05rem;">Confirm Booking</button>
+    </form>
+
+    <div class="sticky-col">
+      <div class="card" id="order-summary"></div>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>

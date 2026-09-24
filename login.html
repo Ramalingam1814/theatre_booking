@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login / Register — CineBook</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="site-navbar"></div>
+
+<main class="container">
+  <div id="auth-content" class="auth-wrapper">
+    <div class="auth-tabs">
+      <div class="auth-tab active" data-target="login-panel">Login</div>
+      <div class="auth-tab" data-target="register-panel">Register</div>
+    </div>
+
+    <div id="login-panel" class="auth-panel active">
+      <form id="login-form" class="card">
+        <h2>Welcome Back</h2>
+        <div class="form-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" placeholder="you@example.com" required>
+          <span class="error-text"></span>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" placeholder="••••••••" required>
+          <span class="error-text"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+    </div>
+
+    <div id="register-panel" class="auth-panel">
+      <form id="register-form" class="card">
+        <h2>Create an Account</h2>
+        <div class="form-group">
+          <label for="register-name">Full Name</label>
+          <input type="text" id="register-name" placeholder="Demo User" required>
+          <span class="error-text"></span>
+        </div>
+        <div class="form-group">
+          <label for="register-email">Email</label>
+          <input type="email" id="register-email" placeholder="you@example.com" required>
+          <span class="error-text"></span>
+        </div>
+        <div class="form-group">
+          <label for="register-password">Password</label>
+          <input type="password" id="register-password" placeholder="At least 6 characters" required>
+          <span class="error-text"></span>
+        </div>
+        <div class="form-group">
+          <label for="register-confirm">Confirm Password</label>
+          <input type="password" id="register-confirm" placeholder="Re-enter password" required>
+          <span class="error-text"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Register</button>
+      </form>
+    </div>
+
+    <p style="text-align:center;color:#64748B;font-size:0.8rem;margin-top:16px;">
+      This is a frontend-only simulated authentication system for academic demonstration.
+      Credentials are stored in your browser's localStorage only.
+    </p>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
